@@ -40,3 +40,25 @@ var f2 = function () {
 };
 
 f2();
+
+/* var start = 1;
+function setEnd() {
+  var end = 10;
+}
+setEnd();
+console.log(end); */
+
+function sayHello() {
+  console.log('hello');
+}
+
+console.log(sayHello.prototype);
+
+function makeAdder(x) {
+  return function (y) {
+    return x + y;
+  };
+}
+
+var addFive = makeAdder(5);
+console.log(addFive(3));
